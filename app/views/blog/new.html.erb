@@ -1,0 +1,13 @@
+<>Add a Post</>
+<br/>
+<%= form_with model: @blog do |blog| %>
+    <%= blog.label :title %>
+    <%= blog.text_field :title %>
+    <br />
+    <%= blog.label :content %>
+    <%= blog.text_field :content %>
+    <br />
+    <%= blog.submit "Add Post" %>
+  <% end %>
+<br />
+<p><%= link_to 'Back to Main Page', blogs_path %></p>
