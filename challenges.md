@@ -8,7 +8,7 @@ blog => title: srting, content: text
 rails g model Blog title:string  content:text
 
 Blog.create(title:"my first blog", content: "I am so excited to be posting in the greatest blogsite ever. This is the best website ever.")
-
+Blog.new(title:"my first blog", content: "I am so excited to be posting in the greatest blogsite ever. This is the best website ever.")
 Blog.create(title:"Dogs are the best", content: "There is no need for explenation. They just are")
 
 rails g controller Blog
@@ -54,6 +54,10 @@ Can navigate from the landing page to the view of the new page
 Can see a form for title and content
 Can see a submit button
 Can navigate back from the new page to the landing page
+
+
+
+
 Story 4: In order to interact with the blog post application, as a user of the application, I need to create a new blog post.
 
 Branch: blog-create

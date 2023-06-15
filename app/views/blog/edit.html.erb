@@ -1,13 +1,13 @@
-<h1>Add a Post</h1>
+<h1>Edit the Post</h1>
 <br/>
-<%= form_with model: @blog do |blog| %>
+<%= form_with model:  @blog, method: :patch do |blog| %>
     <%= blog.label :title %>
     <%= blog.text_field :title %>
     <br />
     <%= blog.label :content %>
     <%= blog.text_field :content %>
     <br />
-    <%= blog.submit "Add Post" %>
+    <%= blog.submit "Edit Post" %>
   <% end %>
 <br />
 <p><%= link_to 'Back to Main Page', blogs_path %></p>
